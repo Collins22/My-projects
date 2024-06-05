@@ -842,7 +842,5 @@ const evenNumbers = numbers.filter(function (numbers) {
 })
 console.log(evenNumbers);
 
-bkhvlub
-
 
 
