@@ -884,7 +884,112 @@ const companies = [
     { name: 'Company Seven', Category: 'Retail', Start: 2000, End: "Till Date" },
 ]
 
-//
+//Array.reduce
+//this is used to reduce ur array to a single value, the previous value or accumulator is a result of the last callback of the function, while the current value is what were currently on nd the initial value is what we r doing currently.
+const numbers = [1, 2, 3, 4, 5] 
+//this exaple shows how to get the sum of a value. the initial value is normally set to zero 
+const sum = numbers.reduce(function (accummulator, currentValue) {
+    return accummulator + currentValue;
+}, 0);
+//also  note that when the value changes from 0 to another it just starts from the number
+const sum2 = numbers.reduce((acc, cur) => acc + cur, 8);
+console.log(sum2);
+
+
+const cart = [
+    { id: 1, name: 'product 1', price: 150 },
+    { id: 2, name: 'product 2', price: 200 },
+    { id: 3, name: 'product 3', price: 250 },
+];
+// when reducing with objects always remeber to use the ('.' dot notation there) this method is mostly used in shopping carts
+const sumPrice = cart.reduce((acc, product) => acc + product.price, 200);
+console.log(sumPrice);
+
+//CHALLENGES
+
+//NUM 1
+//Take the people array and create an array called youngPeople that shows objects with only name and email properties that are 25 and under. the name property should have the first and last name. 
+
+const people = [
+    {
+        Name: {
+            firstName: 'James',
+            lastName: 'Calson'
+        },
+        Email: 'Jamescall@gmail.com',
+        Phone: '906-655-4434',
+        Age: 30
+    },
+    {
+        Name: {
+            firstName: 'Emmanuel',
+            lastName: 'Chrolo'
+        },
+        Email: 'ChroloEm@gmail.com',
+        Phone: '906-633-5534',
+        Age: 25
+    },
+    {
+        Name: {
+            firstName: 'Jason',
+            lastName: 'Drey'
+        },
+        Email: 'JasonDrey@gmail.com',
+        Phone: '905-343-3333',
+        Age: 20
+    },
+    {
+        Name: {
+            firstName: 'Constance',
+            lastName: 'Cameron'
+        },
+        Email: 'ConsCam@gmail.com',
+        Phone: '906-655-4434',
+        Age: 22
+    },
+    {
+        Name: {
+            firstName: 'Sun',
+            lastName: 'Wukon'
+        },
+        Email: 'WukongSu@gmail.com',
+        Phone: '906-655-4434',
+        Age: 24
+    }
+]
+// this project required the use of filter and map method of arrays. to make your code clearer learn to organize it better. 
+const youngPeople = people
+    .filter((people) => people.Age <= 25)
+    .map((people) => [people.Name, people.Email])
+console.log(youngPeople);
+
+
+//NUM 2
+//Add all of the positive numbers in the array
+// this project required the use of both the filter and the reduce method. the filter was used to select the needed values while the reduce was used to sum up all the values
+const positiveNum = [1, -2, 3, -34, 56, -78, 97, -54]
+const total = positiveNum
+    .filter((positiveNum) => positiveNum > 0)
+    .reduce((acc, cur) => acc + cur, 0)
+console.log(total);
+
+//NUM 3
+//Create a new array called capitalizedWords with the words from the array with the first letter of each word capitalized
+//the project made use of both string and array methods to produce our solution. the toUpperCase and Slice methods were used to convert the laters to uppercase while also starting selecting the values from each array, the number zero in the word was used to specify where to start from in the process of capitalizing.  
+const words = ['cedar', 'nightingle', 'roses']
+const capitalizedWords = words.map((words) => words[0].toUpperCase() + words.slice(1))
+console.log(capitalizedWords);
+
+
+
+
+
+
+
+
+
+
+
 
 
 
