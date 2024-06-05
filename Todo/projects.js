@@ -836,11 +836,61 @@ const socialObjs = [
 socialObjs.forEach((item) => console.log(item.url));
 */      
 //Filter
-const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
-const evenNumbers = numbers.filter(function (numbers) {
-    return numbers % 2 === 0;
+//const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+//const evenNumbers = numbers.filter(function (numbers) {
+  //  return numbers % 2 === 0;
+//});
+//console.log(evenNumbers);
+
+/*const companies = [
+    { name: 'Company one', Category: 'Finnance', Start: 1995, End: 2001 },
+    { name: 'Company Two', Category: 'Auto', Start: 1990, End: 2009 },
+    { name: 'Company Three', Category: 'Finnance', Start: 2000, End: 2011 },
+    { name: 'Company Four', Category: 'Whole Sale', Start: 1985, End: 2019 },
+    { name: 'Company Five', Category: 'Finnance', Start: 2000, End: 2024 },
+    { name: 'Company Six', Category: 'Fashion', Start: 2022, End: "Nill" },
+    { name: 'Company Seven', Category: 'Retail', Start: 2000, End: "Till Date" },
+];
+//Companies that their end dates are unknonw
+const Retail = companies.filter (function (companies) {
+   return companies.End === 'Nill'
 })
-console.log(evenNumbers);
+console.log(Retail);
+
+//Companies that stated after 
+const earlyCompanies = companies.filter(
+    (companies) => companies.Start >= 1990
+);
+console.log(earlyCompanies);
+
+const olderCompanies = companies.filter(
+    (companies) => companies.Start < 2000 && companies.End >= 2000
+);
+console.log(olderCompanies)
+
+
+//Array.map
+const num = [1, 2, 3, 4, 5]
+const doubledNum = num.map((num)=>num * 2)
+console.log(doubledNum);*/
+
+const companies = [
+    { name: 'Company one', Category: 'Finnance', Start: 1995, End: 2001 },
+    { name: 'Company Two', Category: 'Auto', Start: 1990, End: 2009 },
+    { name: 'Company Three', Category: 'Finnance', Start: 2000, End: 2011 },
+    { name: 'Company Four', Category: 'Whole Sale', Start: 1985, End: 2019 },
+    { name: 'Company Five', Category: 'Finnance', Start: 2000, End: 2024 },
+    { name: 'Company Six', Category: 'Fashion', Start: 2022, End: "Nill" },
+    { name: 'Company Seven', Category: 'Retail', Start: 2000, End: "Till Date" },
+]
+
+//
+
+
+
+
+
+
 
 
 
