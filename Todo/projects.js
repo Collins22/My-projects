@@ -874,7 +874,7 @@ const num = [1, 2, 3, 4, 5]
 const doubledNum = num.map((num)=>num * 2)
 console.log(doubledNum);*/
 
-const companies = [
+/*const companies = [
     { name: 'Company one', Category: 'Finnance', Start: 1995, End: 2001 },
     { name: 'Company Two', Category: 'Auto', Start: 1990, End: 2009 },
     { name: 'Company Three', Category: 'Finnance', Start: 2000, End: 2011 },
@@ -978,7 +978,13 @@ console.log(total);
 //the project made use of both string and array methods to produce our solution. the toUpperCase and Slice methods were used to convert the laters to uppercase while also starting selecting the values from each array, the number zero in the word was used to specify where to start from in the process of capitalizing.  
 const words = ['cedar', 'nightingle', 'roses']
 const capitalizedWords = words.map((words) => words[0].toUpperCase() + words.slice(1))
-console.log(capitalizedWords);
+console.log(capitalizedWords);*/
+
+
+//DOM
+
+
+
 
 
 

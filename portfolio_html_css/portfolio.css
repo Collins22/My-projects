@@ -1,0 +1,50 @@
+* {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.header {
+    position: fixed;
+    margin: 30px 0px 20px 0px;
+    width: 100%;
+    padding: 35px 12%;
+    background-color: rgba(49, 47, 47, 0.8);
+    backdrop-filter: blur;
+    display: flex;
+}
+.logo {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 30px;
+    color: rgb(232, 225, 219);
+    font-weight: 200;
+    transition: 0.8s;
+   
+}
+.crimson {
+    font-family: serif;
+    color: crimson;
+    font-weight: 200;
+}
+.logo:hover {
+    border: 1px whitesmoke;
+    border-radius: 20px;
+    background-color: rgb(220, 231, 225);
+    transform: scale(0.7);
+}
+.navbar a {
+    text-decoration: none;
+    font-size: 10px;
+    color: white;
+    font-weight: 500;
+    font-size: medium;
+    margin: 20px 10px 15px 10px;
+    border-bottom: 3px solid transparent;
+    transition: 0.3 ease;
+}
+.navbar a:hover,
+.navbar a:active{
+    color: crimson;
+    border-bottom: 3px solid crimson;
+    transition: 0.5s;
+}
