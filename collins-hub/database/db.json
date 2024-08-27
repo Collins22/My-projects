@@ -1,0 +1,18 @@
+{
+    "apps": [
+        {
+            "title": "First App",
+            "creator": "Collins",
+            "body": "This is the first one of the series",
+            "id": 1
+        },
+         
+        {
+            "title": "Second App",
+            "creator": "Legacy",
+            "body":"This is the second one of the series",
+            "id": 2
+        }
+    ]
+}
+

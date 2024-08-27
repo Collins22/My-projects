@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="site.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.7/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>WEBSITE</title>
+</head>
+<body>
+    <nav id ="navbar">
+        <div class="logo">Coll<span>ins</span></div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contacts">Contacts</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="ham-nav">
+        <div class="logo">Coll<span>ins</span></div>
+        <div class="ham-nav">
+            <div class="ham-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                    <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                    <li><a href="#experience" onclick="toggleMenu()">Experience</a><li>
+                    <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                    <li><a href="#contacts" onclick="toggleMenu()">Contacts</a></li>
+            </div>
+        </div>
+    </nav>
+    <section class="section" id="profile">
+        <div class="sec_pic">
+            <img src="./img/Edits.jpg" alt="Collins" width="350 * 700" style="border-radius: 100%;">
+        </div>
+        <div class="sec_txt">
+            <p class="sec_txt_p1">Hello, I'm</p>
+            <h1 class="title">Collins</h1>
+            <p class="sec_txt_p2">I'm a web developer</p>
+            <div class="btn_container">
+                <button class="btn-1" onclick="window.open('./assets/legacy.pdf')">
+                    Download CV
+                </button>
+                <button class="btn-2" onclick="location.href='./#contacts'"> 
+                    Contact Info
+                </button>
+            </div>
+            <div id="social-cont">
+                <i class="fa-brands fa-facebook" onclick="location.href='https://facebook.com/NwosuCollins'"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-linkedin"></i>
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <p class="section-par">Lets Show you around!</p>
+        <h1 class="desc"></h1>
+        <div class="section-container">
+            <div class="section-pic-cont">
+                <img src="./img/Eds 2.jpg" 
+                width="300 * 300" 
+                alt="Me Time">
+            </div>
+            <div class="about-pic">
+                <div class="about-details">
+                    <div class="about-container">
+                        <div class="details-container">
+                            <i class="fa-solid fa-certificate" alt="Certification"></i>
+                            <h3>Education</h3>
+                            <p>Bsc. Engineering <br /> Surveying and Geoninformatics/Certified Javascript Developer</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="about-pic">
+                <div class="about-details">
+                    <div class="about-container">
+                        <div class="details-container">
+                            <i class="fa-solid fa-user-group" alt="Background"></i>
+                            <h3>Education</h3>
+                            <p>Bsc. Engineering </p>
+                        </div>
+                    </div>
+                    <div class="text-container">
+                        <p>
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero earum, illum modi necessitatibus odio temporibus quaerat ducimus soluta, officia nisi quod impedit mollitia ad a veniam provident sunt magni? Qui!
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum nobis facere incidunt iusto quos earum maxime porro ea harum. Ut ipsam obcaecati dolor nam magni animi ab impedit laboriosam architecto.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <i class="fa-solid fa-angles-down" alt="Down" onclick="location.href='./Experience'"></i>
+        </div>            
+    </section>
+    <script src="site.js"></script>
+</body>
+</html>

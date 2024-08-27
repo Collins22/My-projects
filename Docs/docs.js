@@ -346,17 +346,62 @@
 - `screenX` = X position of mouse click rel to the screen
 - `screenY` = Y position of mouse click rel to the screen
 */
-
-const logo = document.querySelector('img');
-logo.addEventListener('click', function (e) {
-    console.log(e.clientX);
-});
-
-
+// the preventDefault lets us prevent us from acting on the default. its used either with forms our links.
+// const logo = document.querySelector('img');
+// logo.addEventListener('click', function (e) {
+//     console.log(e.screenX);
+// });
 
 
+//Keyboard Events
+
+const itemInput = document.getElementById('item-input');
+const onKeyPress = e => console.log('when we click on the keyboard');
+const onKeyUp = e => { console.log('pick') };
+const onKeyDown = e => {console.log('select')};
+
+//itemInput.addEventListener('keypress', onKeyPress);
+itemInput.addEventListener('keyup', onKeyUp);
+itemInput.addEventListener('keydown', onKeyDown)
+
+// there r various methods to verify the type of key thats selected. these methods include: Key, KeyCode, Code.
+// the is used together with the specified key to help tell the type of key thats being pressed, its mostly used in gamed development and in options where theres a need to find out the type of key thats been selected.
+//Key: this is used to pick the selected key.
+//KeyCode: this is usd to show the code assigned to the key
+// Code: this is the code for the key
 
 
+//Input Events
+
+/*
+- onChecked = this is used when you are checking if ur input has been cheked(used on check boxes)
+- onInput = used when we are putting an input in our forms
+- onFocus = used when your clicking inside ur input field(mostly used on forms)
+- onBlur = used when your clicking outside your input field(mostly used on forms) 
+*/
+
+/* 
+ => Form Submission: this is where we want our form to be submitted.
+
+- onSubmit: this method lets tell the form how to submit its data.
+- .get: this is used to the values of the form that are submitted.
+- .entries: this is used to get the entries in the form.
+*/
+
+/* 
+=> Event bubbling: this is an event thats used to move the action for that event to the first part.  
+
+
+=> Event Delegation: this is a method of addinge event handlers to lots of events. 
+
+=> Page loading and Window Events: 
+
+when you put your script tag in the head it wwont run as it means that we r running our Js before the code. but this problem can be solverd through the use of window.onLoad or we could an an event listerner to the window and add load as the event. we could also solve it by using the DOMContent Loaded. which loads all the documents after they have been parsed. we could also use the defer attribute that will let usrun the javascript after the code was loaded and it should be added to the script in our html(when its added to the top.)
+
+- resize: this event is used to check the size of our screen
+- scrol: this is used to show where we are sccrolling on the screen, it can be used when we want to give an option for our navigation.
+- focus: this events lets us set up when we click on the window
+- blur: this events lets us set up when we want to click out of the window.
 
 
 
